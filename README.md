@@ -2,6 +2,10 @@
     Concepta Front End Developer Test
 </h4>
 
+## :rocket: CodeSandbox
+
+You can test the application here (https://codesandbox.io/s/dropdownmenu-cqip3k)
+
 ## :rocket: Technologies
 This project was developed with the following technologies
 
