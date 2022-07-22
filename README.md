@@ -2,7 +2,7 @@
     Concepta Front End Developer Test
 </h4>
 
-## :rocket: Tecnologias
+## :rocket: Technologies
 This project was developed with the following technologies
 
 - [React](https://reactjs.org)
@@ -10,7 +10,7 @@ This project was developed with the following technologies
 - [Typescript](https://www.typescriptlang.org/) 
 
 
-## :page_with_curl: Como Usar
+## :page_with_curl: How to run
 - **Clone**
     - ```cd DropDownMenu```
     - ```yarn```
