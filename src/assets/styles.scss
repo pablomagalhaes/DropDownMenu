@@ -1,0 +1,87 @@
+// backgrounds
+$black100: hsla(225, 14%, 12%, 1);
+$black200: hsla(225, 14%, 14%, 1);
+$black300: hsla(225, 14%, 16%, 1);
+$black400: hsla(225, 14%, 18%, 1);
+$black500: hsla(225, 14%, 20%, 1);
+$black600: hsla(225, 14%, 22%, 1);
+$black700: hsla(225, 14%, 24%, 1);
+$black800: hsla(225, 14%, 26%, 1);
+$black900: hsla(225, 14%, 28%, 1);
+
+// text
+$white100: hsla(225, 14%, 100%, 1);
+$white200: hsla(225, 14%, 100%, 0.8);
+
+// primary
+$blue100: hsla(210, 100%, 37%, 1);
+$blue200: hsla(210, 100%, 33%, 1);
+$blue300: hsla(210, 100%, 35%, 1);
+$blue400: hsla(210, 100%, 33%, 0.5);
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App {
+  width: 200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.d-none{
+  display: none;
+}
+.Prelative{
+  position: relative;
+}
+.dropMenu{
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-left: 0;
+  margin: 0;
+
+  > li {
+    list-style: none;
+    display: flex;
+    width: 120px;
+    > a, button {
+      padding: 15px;
+      flex:1;
+      text-align: left;
+    }
+  }
+}
+.btn-left{
+  text-align: left;
+}
+.btn-right{
+  text-align: right;
+}
+
+.left{
+  left: 0;
+  right: auto;
+}
+
+.right{
+  left: auto;
+  right: 0;
+}
+.icon{
+  padding:4px 5px;
+}
+button, a {
+  color:$white100;
+  border:none;
+  background-color: $black900;
+  text-decoration: none;
+  padding:0;
+  cursor:pointer;
+  font-size: 16px;
+
+  &:hover, &:focus {
+    background-color: $blue300;
+    outline: none ;
+  }
+}
