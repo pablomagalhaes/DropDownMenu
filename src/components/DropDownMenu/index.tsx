@@ -9,7 +9,7 @@ interface Props {
 function DropdownMenu({ position }: Props) {
   const ref = useRef<HTMLHeadingElement>(null);
   const [menu, setMenu] = useState(false);
-  const [items, setItems] = useState<object[]>([
+  const [items] = useState<object[]>([
     {"name": "Rename"},
     {"name": "Delete"},
     {"name": "Share"},
