@@ -1,11 +1,27 @@
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+
 import DropDownMenu from "../../components/DropDownMenu";
 
 function Home() {
+
+  const [data, setData] = useState<object[]>([])
+
+  //Get data menu from Json file
+  useEffect(() => {
+    axios
+    .get('local-json/data.json')
+    .then((res) => setData(res.data))
+    .catch((err) => console.log(err));
+  },[]);
+
+  console.log('data', data)
+
  
   return (
     <>
-      <DropDownMenu position="left" />
-      <DropDownMenu position="right"/>
+      <DropDownMenu position="left" items={data}  />
+      <DropDownMenu position="right" items={data}/>
     </>
   );
 }

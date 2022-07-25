@@ -4,16 +4,17 @@ import DropDownItem from "./DropDownItem";
 
 interface Props {
     position?: "left" | "right";
+    items: Array;
   }
 
-function DropdownMenu({ position }: Props) {
+function DropdownMenu({ position, items }: Props) {
   const ref = useRef<HTMLHeadingElement>(null);
   const [menu, setMenu] = useState(false);
-  const [items] = useState<object[]>([
-    {"name": "Rename"},
-    {"name": "Delete"},
-    {"name": "Share"},
-   ]);
+  // const [items] = useState<object[]>([
+  //   {"name": "Rename"},
+  //   {"name": "Delete"},
+  //   {"name": "Share"},
+  //  ]);
 
    // OnClick Function
    const HandleClick = () => (menu ? setMenu(false) : setMenu(true));
