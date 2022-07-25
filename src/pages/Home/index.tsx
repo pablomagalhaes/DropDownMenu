@@ -15,9 +15,6 @@ function Home() {
     .catch((err) => console.log(err));
   },[]);
 
-  console.log('data', data)
-
- 
   return (
     <>
       <DropDownMenu position="left" items={data}  />
