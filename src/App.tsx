@@ -1,12 +1,11 @@
 import "./assets/styles.scss";
-import DropDownMenu from "./components/DropDownMenu/index"
+import Home from "./pages/Home";
 
 function App() {
 
   return (
     <div className="App">
-      <DropDownMenu position="left" />
-      <DropDownMenu position="right"/>
+      <Home />
     </div>
   );
 }
